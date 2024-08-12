@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Social";
+    src: url("../assets/fonts/Social.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "KCUppercut";
+    src: url("../assets/fonts/KCUppercut.otf") format("opentype");
+}
+
+:root {
+    --red: #c92e31;
+    
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Gupter", "serif";
+    font-weight: 100;
+    background: rgb(255, 255, 255);
+}
+
+.but {
+    width: 300px;
+    height: 200px;
+}
+
+
+
+

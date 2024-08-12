@@ -1,0 +1,84 @@
+.WWAMidFlex {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20vw 0 10vw 0;
+    
+}
+
+.WWAMidPersonFlex {
+    display: flex;
+}
+
+.WWAMidTextFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.WWAMidName {
+    font-family: "KCUppercut";
+    font-size: 11.25vw;
+}
+
+.WWAMidTitel {
+    font-family: "KCUppercut";
+    color: var(--red);
+    font-size: 3.9vw;
+    text-align: center;
+}
+
+.WWAMidTitel.sub {
+    letter-spacing: 0.675vw;
+}
+
+
+.WWAMidBoxErik {
+    width: 40vw;
+    height: 27vw;
+    background-color: black;
+    margin: 0.3vw 0 0 0;
+    background-size: 50vw;
+}
+
+.WWAMidBoxSamuel {
+    width: 28.8vw;
+    height: 27vw;
+    position: relative;
+    top: -13vw;
+    background-color: black;
+    margin: 0.3vw 0.3vw 0px 0px;
+    background-size: 40vw;
+    background-position:  right 20px;
+    background-repeat: no-repeat;
+}
+.WWAMidBread {
+    font-family: "KCUppercut";
+    font-size: 1.5vw;
+    width: 38vw;
+    text-align: left;
+    position: relative;
+    margin: 0.6vw 0 0 0.3vw;
+
+    width: 100%;
+    
+}
+
+@media (max-width: 500px) {
+    .WWAMidBoxSamuel {
+        top: 0vw;
+    }
+
+
+    .WWAMidBread {
+        font-size: 2vw;
+        overflow-wrap: break-word;
+        width: 29vw;
+    }
+
+    .WWAMidBread.sub {
+        width: 40.5vw;
+    }
+
+}

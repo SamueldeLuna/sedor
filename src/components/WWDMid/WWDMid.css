@@ -1,0 +1,51 @@
+.WWDMidFlex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: -20vw;
+}
+
+.WWDMidTextFlex {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: relative;
+    left: 58vw;
+    top: 30vw;
+    width: 70vw;
+    height: 300px;
+    z-index: 1;
+}
+
+.WWDMidTitel {
+    font-family: "KCUppercut";
+    font-size: 9.5vw;
+}
+
+strong {
+    font-size: 13vw;
+    font-weight: 100;
+    color: black;
+}
+
+.WWDMidBread {
+    color: black;
+
+    font-size: 2vw;
+    text-align: left;
+    width: 50vw;
+    
+}
+
+.WWDMidDoodle {
+    width: 130vw;
+    position: relative;
+    left: -30vw;
+}
+
+
+
+.WWBMidBreadLink {
+    color: var(--red);
+    font-weight: bold;
+}

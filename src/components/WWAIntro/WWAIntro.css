@@ -1,0 +1,52 @@
+.WWAIntroFlex {
+    display: flex;
+    margin-top: 25vw;
+    justify-content: space-between;
+}
+
+.WWAIntroGorilla{
+    width: 50%;
+    margin: 0 -13vw;
+    position: relative;
+    right: 15vw;
+    
+}
+
+.WWAIntroTextFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 20vw;
+    margin-left: 15vw;
+}
+
+.WWAIntroTitel {
+    font-family: "KCUppercut";
+    font-size: 15vw;
+    text-align: center;
+}
+
+.WWAIntroBread {
+
+    width: 39vw;
+    text-align: justify;
+    font-size: 2vw;
+}
+
+@media (max-width: 950px) {
+    .WWAIntroGorilla {
+        width: 60%;
+        margin-right: -20vw;
+    }
+    .WWAIntroTextFlex{
+        top: 25vw;
+    }
+    .WWAIntroTitel {
+        font-size: 17vw;
+    }
+
+    .WWAIntroBread {
+        width: 44vw;
+    }
+}

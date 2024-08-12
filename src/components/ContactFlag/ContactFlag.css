@@ -1,0 +1,33 @@
+.contactFlagTitel {
+    font-family: "KCUppercut";
+    font-size: 15vw;
+    color: black;
+    position: relative;
+    margin: 10vw 0 0 15vw;
+    
+}
+
+.contactConFlex {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 8vw 0 30vw 15vw;
+}
+
+.contactMailIcon {
+    width: 8vw;
+}
+
+.contactConTitel {
+    font-family: "KCUppercut";
+    font-size: 5vw;
+    margin-left: 3vw;
+}
+
+
+@media (max-width: 950px) {
+    .contactFlagTitel {
+        margin: 17vw 0 0 15vw ;
+    }
+}
+

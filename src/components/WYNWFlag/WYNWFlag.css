@@ -1,0 +1,20 @@
+.WYNWFlagTitel {
+    font-family: "KCUppercut";
+    font-size: 15vw;
+    position: relative;
+    margin: 8vw 0 0 15vw;
+    
+}
+
+@media (max-width: 1100px) {
+    .WYNWFlagTitel{
+        margin: 17vw 0 0 15vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .WYNWFlagTitel {
+        margin: 30vw 0 0 15vw;
+    }
+    
+}

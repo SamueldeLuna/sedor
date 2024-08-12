@@ -1,0 +1,92 @@
+.WYNWMidFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vw 0 10vw 0;
+}
+
+.WYNWMidText {
+    position: relative;
+    margin-top: 200px;
+    right: -15vw;
+    text-align: center;
+    
+}
+
+
+.WYNWMidText.mid {
+    left: -5vw;
+    
+}
+
+.WYNWMidText.sub {
+    right: -10vw;
+    
+}
+
+.WYNWMidConTitel {
+    font-family: "KCUppercut";
+    text-align: center;
+    font-size: 10vw;
+    color: var(--red);
+    position: relative;
+    background-color: white;
+    z-index: 1;
+    letter-spacing: normal;
+    transition: transform 0.3s ease-in-out;
+}
+
+.WYNWMidConTitel.hovered {
+    transform: scale(1.1);
+}
+
+
+.WYNWMidConBread {
+    position: relative;
+    overflow-wrap: break-word;
+    z-index: 0;
+    text-align: center;
+    font-size: 2vw;
+    width: 50vw;
+    opacity: 0;
+    transform: translateY(-5vw);
+    transition: transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+
+.WYNWMidConBread.till {
+    width: 80vw;
+}
+
+.WYNWMidConBread.inf {
+    width: 72vw;
+}
+
+.WYNWMidConBread.hovered {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+@media (max-width: 500px) {
+    .WYNWMidText{
+        margin-top: 20vw;
+        transform: translateY(0);
+        right: 0;
+        left: 0;
+    }
+
+    .WYNWMidText.mid {
+        left: 0;
+    }
+
+
+    .WYNWMidConTitel {
+        transform: scale(1.1);
+    }
+
+    .WYNWMidConBread {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}

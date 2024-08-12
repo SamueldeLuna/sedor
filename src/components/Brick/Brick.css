@@ -1,0 +1,95 @@
+.brickFlex {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.brickTitel {
+    font-family: "KCUppercut";
+    margin-top: 2.5vw;
+    font-size: 18vw;
+    color: Black;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+    width: fit-content;
+    z-index: 1;
+    transition: color 0.3s ease-in-out, letter-spacing 0.3s ease-in-out;
+}
+
+.brickTitelDots {
+    width: 18vw;
+    height: 8vw;
+    position: absolute;
+    top: 31vw;
+    left: 8vw;
+    z-index: 1;
+    transition: width 0.3s ease-in-out;
+}
+
+.brickTitelDots.hovered {
+    width: 19.5vw;
+}
+
+.brickTitel.hovered{
+    letter-spacing: 1vw;
+    color: var(--red);
+}
+
+.titel {
+    text-decoration: none;
+}
+
+.brickDoodle {
+    position: relative;
+    top: -2vw;
+    z-index: 1;
+    cursor: pointer;
+    width: 70vw;
+}
+
+.brickLink.titel {
+    flex: 1;
+    position: relative;
+    left: 13vw;
+}
+
+.brickDoodleLink {
+    flex: 1;
+    position: relative;
+    top: 25vw;
+    left: -20vw;
+    width: 30px;
+}
+
+
+@media (max-width: 500px) {
+    .brickDoodleLink{
+        z-index: 0;
+    }
+
+    .brickTitel {
+        color: black;
+        font-size: 25vw;
+        margin-top: 0px;
+    }
+
+    .brickTitel.hovered {
+        color: var(--red);
+        letter-spacing: normal;
+    }
+
+    .brickTitelDots {
+        width: 25vw;
+        height: 10vw;
+        left: 11vw;
+        top: 34vw;
+    }
+
+    .brickTitelDots.hovered {
+        width: 25vw;
+    }
+}

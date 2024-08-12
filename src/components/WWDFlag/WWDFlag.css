@@ -1,0 +1,50 @@
+body {
+    overflow-x: hidden;
+}
+
+.WWDFlagFlex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 8vw 5vw;
+}
+
+.WWDFlagTitel {
+    font-family: "KCUppercut";
+    font-size: 25vw;
+}
+
+.WWDFlagTitel.right {
+    font-size: 53vw;
+    position: relative;
+    left: -10vw;
+    margin-top: 0.5vw;
+}
+
+.dots {
+    width: 20vw;
+    height: 10vw;
+    position: absolute;
+    top: 22vw;
+    left: 18.5vw;
+
+}
+@media (max-width: 1250px) {
+   .WWDFlagFlex{
+       margin-top: 15vw;
+   }
+
+   .dots {
+    top: 29vw;
+   }
+}
+@media (max-width: 700px) {
+   .WWDFlagFlex{
+       margin-top: 20vw;
+   }   
+
+   .dots {
+    top: 34vw;
+   }
+
+}

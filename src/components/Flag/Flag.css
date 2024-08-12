@@ -1,0 +1,136 @@
+.flag {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.sedorText {
+    width: 80%;
+    position: fixed;
+    top: -3vw;
+}
+
+.sedorText.hidden {
+    opacity: 0;
+}
+
+.flagCatEar {
+    width: 150%;
+    position: relative;
+    top: 100vh;
+}
+
+.flagEyes {
+    width: 100%;
+    background-color: white;
+    height: 1500px;
+    position: relative;
+    top: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    transition: background-color 0.3s;
+}
+
+.flagTiger {
+    width: 25vw;
+    position: relative;
+    left: 10vw;
+    top: -2vw;
+    transform: rotateZ(-20deg);
+}
+
+.flagTextContainer {
+    z-index: 2;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: -400px;
+}
+
+.flagTextImgLink {
+    transform: rotateZ(-5deg);
+}
+
+.flagTextImg {
+    width: 80%;
+    cursor: pointer;
+    transform-origin: left bottom;
+    transition: transform 0.2s ease-in;
+}
+
+.flagTextImg.sub {
+    transform: rotateZ(4deg);
+    position: relative;
+    transform-origin: left top;
+    left: 10px;
+    top:-30px;
+}
+
+.flagTextImg.hovered {
+
+    transform: scale(1.05)
+}
+
+.flagTextImg.sub.hovered {
+    
+    transform: rotateZ(4deg) scale(1.05);
+}
+
+@media (max-width: 1200px) {
+    .sedorText {
+        top: 7vw;
+    }
+}
+
+@media (max-width: 920px) {
+    .sedorText {
+        top: 15vw;
+        width: 90%
+    }
+}
+
+
+@media (max-width: 730px) {
+    .sedorText {
+        top: 25vw;
+        width: 90%
+    }
+}
+
+@media (max-width: 600px) {
+    .sedorText {
+        top: 40vw;
+        width: 90%
+    }
+}
+
+@media (max-width: 500px) {
+    .sedorText {
+        top: 50vw;
+        width: 95%;
+    }
+
+    .flagTiger {
+        display: none;
+    }
+
+    .flagEyes {
+        height: 1300px;
+    }
+
+    .flagTextContainer {
+        margin-top: -100px;
+    }
+
+    .flagTextImg {
+        transform-origin: center;
+    }
+}

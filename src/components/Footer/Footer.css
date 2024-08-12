@@ -1,0 +1,58 @@
+.footerBody {
+    width: 100%;
+    height: 350px;
+    background-color: white;
+}
+
+.footerFlex {
+    display: flex;
+    position: relative;
+    top: 100px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.footerContact {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    text-align: left;
+    font-family: "KCUppercut";
+}
+
+.footerConTitel {
+    font-size: 5rem;
+    color: white;
+    mix-blend-mode: difference;
+}
+
+.footerConList {
+    margin-top: 15px;
+    font-size: 2rem;
+    color: white;
+    mix-blend-mode: difference;
+}
+@media (max-width: 850px) {
+    .footerConTitel {
+        font-size: 9vw;
+    }
+
+    .footerConList {
+        font-size: 3.8vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .footerFlex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerContact {
+        align-items: center;
+        margin-top: 20px;
+    }
+
+
+}

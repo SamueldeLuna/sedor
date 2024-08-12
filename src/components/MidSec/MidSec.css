@@ -1,0 +1,116 @@
+.midSecFlex {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 200px;
+    z-index: 2;
+}
+
+.midSecWhiteCat {
+    position: relative;
+    left: 10vw;
+    top: 7vw;
+    z-index: 0;
+    width: 30px;
+    flex:2;
+}
+
+.midSecMonkey {
+    width: 25vw;
+    position: relative;
+    left: -20vw;
+    cursor: pointer;
+}
+
+.midSecMonkeyLink {
+    position: relative;
+    width: 30px;
+    flex: 1;
+}
+
+.midSecLink.titel {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 30px;
+    flex:2;
+}
+
+.midSecTitel {
+    font-family: "KCUppercut";
+    margin-top: 50px;
+    font-size: 17vw;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+    position: relative;
+    right: 12vw;
+    width: fit-content;
+    z-index: 1;
+    transition: color 0.3s ease-in-out, letter-spacing 0.3s ease-in-out;
+}
+
+.midSecDots {
+    width: 8vw;
+    height: 4vw;
+    position: absolute;
+    top: 25vw;
+    right: 17vw;
+    z-index: 1;
+    transition: width 0.3s ease-in-out,
+    right 0.3s ease-in-out;
+}
+
+.midSecDots.hovered {
+    width: 9vw;
+    right: 17.5vw;
+}
+
+
+.midSecTitel.hovered{
+    letter-spacing: 0.5vw;
+    color: var(--red);
+}
+
+@media (max-width: 500px) {
+    .midSecFlex {
+        margin: 100px 0 100px 0;
+    }
+    
+    .midSecMonkey{
+        z-index: 0;
+        left: 10vw;
+        width: 30vw;   
+    }
+
+    .midSecLink.titel {
+        flex:1
+    }
+
+    .midSecTitel {
+        color: black;
+        font-size: 25vw;
+        margin-top: 0px;
+    }
+
+    .midSecTitel.hovered{
+        letter-spacing: normal;
+    }
+
+    .midSecWhiteCat {
+        display: none;
+    }
+
+    .midSecDots {
+        width: 10vw;
+        height: 4.5vw;
+        right: 20.5vw;
+    }
+
+    .midSecDots.hovered{
+        right: 20.5vw;
+        width: 10vw;
+    }
+}
