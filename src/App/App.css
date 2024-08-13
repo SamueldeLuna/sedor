@@ -16,8 +16,6 @@
 body {
     margin: 0px;
     padding: 0px;
-    width: 100vw;
-    overflow-x: hidden;
     font-family: "Gupter", "serif";
     font-weight: 100;
     background: rgb(255, 255, 255);

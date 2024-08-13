@@ -3,6 +3,9 @@
     margin-top: 25vw;
     justify-content: space-between;
     flex-wrap: wrap;
+    overflow-x: clip;
+    overflow-y: visible;
+    
 }
 
 .WWAIntroGorilla{
