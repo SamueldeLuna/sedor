@@ -1,3 +1,5 @@
+
+
 .menuIcon {
     width: 40px;
     margin: 30px;
@@ -41,7 +43,6 @@
     left: 0%;
     z-index: 3;
     transition: left 0.5s ease-out;
-
 }
 
 .menuPop.menuOff{
@@ -87,7 +88,7 @@
     }
 
     .menuItem {
-        width: 300px;
+        width: 60vw;
         font-size: 15vw;
         margin-top: 50px;
         margin-bottom: 50px;
@@ -96,5 +97,9 @@
     .menuItem:hover {
         letter-spacing: normal;
         color: black;
+    }
+
+    .menuPop {
+        transition: left 0.2s;
     }
 }

@@ -42,7 +42,7 @@ const Header = ({ whiteLevel = 0 }) => {
     latest >= whiteLevel ? setScrollBool(false) : setScrollBool(true);
 
     if (isMobile) {
-      if (latest > previous) {
+      if (latest > previous && latest >= 100) {
         setScrollDirection(false);
       } else {
         setScrollDirection(true);

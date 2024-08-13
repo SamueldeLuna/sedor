@@ -45,7 +45,7 @@ const MenuIcon = () => {
     const previous = scrollY.getPrevious();
 
     if (isMobile) {
-      if (latest > previous) {
+      if (latest > previous && latest >= 100) {
         setScrollDirection(false);
       } else {
         setScrollDirection(true);
