@@ -48,3 +48,14 @@ body {
    }
 
 }
+
+@media (max-width: 500px) {
+    .WWDFlagFlex{
+        margin-top: 30vw;
+    } 
+
+    .dots {
+        top: 44vw;
+       }
+
+}

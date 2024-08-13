@@ -9,9 +9,18 @@
 
 .contactConFlex {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+
     position: relative;
     margin: 8vw 0 30vw 15vw;
+}
+
+.contactItemFlex {
+    display: flex;
+    align-items: center;
+    margin-top: 5vw;
+    text-decoration: none;
+    color: black;
 }
 
 .contactMailIcon {
@@ -31,3 +40,12 @@
     }
 }
 
+@media (max-width: 500px) {
+    .contactFlagTitel {
+        margin-top: 35vw;
+    }
+
+    .contactItemFlex {
+        margin-top: 10vw;
+    }
+}

@@ -66,19 +66,48 @@
 }
 
 @media (max-width: 500px) {
+    
+    .WWAMidFlex {
+        margin-top: 35vw;
+    }
+
+    .WWAMidPersonFlex {
+        margin-top: 10vw;
+    }
+
+    .WWAMidBoxErik {
+        width: 30vw;
+        height: 30vw;
+    }   
+
     .WWAMidBoxSamuel {
         top: 0vw;
+        width: 10vw;
+        height: 30vw;
     }
+
+    .WWAMidName {
+        font-size: 20vw;
+    }
+
+    .WWAMidTitel.sub {
+        font-size: 7.9vw;
+    }
+
+    .WWAMidTitel {
+        font-size: 7vw;
+    }
+    
 
 
     .WWAMidBread {
-        font-size: 2vw;
+        font-size: 5vw;
         overflow-wrap: break-word;
-        width: 29vw;
+        width: 50vw;
     }
 
     .WWAMidBread.sub {
-        width: 40.5vw;
+        width: 70vw;
     }
 
 }

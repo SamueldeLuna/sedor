@@ -49,3 +49,27 @@ strong {
     color: var(--red);
     font-weight: bold;
 }
+
+@media (max-width: 500px) {
+    .WWDMidFlex {
+        margin-top: 10vw;
+    }
+    
+    .WWDMidBread {
+        font-size: 5vw;
+        width: 80vw;
+    }
+
+    .WWDMidDoodle {
+        top: 40vw;
+    }
+
+    .WWDMidTitel {
+        font-family: "KCUppercut";
+        font-size: 12.6vw;
+    }
+
+    strong {
+        font-size: 15vw;
+    }
+}

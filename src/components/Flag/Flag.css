@@ -130,7 +130,11 @@
         margin-top: -100px;
     }
 
-    .flagTextImg {
-        transform-origin: center;
+    .flagTextImg.hovered {
+        transform: scale(1);
+    }
+
+    .flagTextImg.sub.hovered {
+        transform: rotateZ(4deg) scale(1);
     }
 }

@@ -1,5 +1,5 @@
 // React
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 // Framer Motion
@@ -14,6 +14,22 @@ import dots from "../../assets/dots.webp";
 import "./Menu.css";
 
 const MenuIcon = () => {
+  // Width check
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1100);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   // Hide pop up menu
   const [showMenu, setShowMenu] = useState(false);
 
@@ -28,10 +44,18 @@ const MenuIcon = () => {
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
 
-    if (latest > previous && latest > 300) {
-      setScrollDirection(false);
+    if (isMobile) {
+      if (latest > previous) {
+        setScrollDirection(false);
+      } else {
+        setScrollDirection(true);
+      }
     } else {
-      setScrollDirection(true);
+      if (latest > previous && latest > 300) {
+        setScrollDirection(false);
+      } else {
+        setScrollDirection(true);
+      }
     }
   });
 

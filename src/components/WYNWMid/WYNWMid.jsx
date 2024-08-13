@@ -31,6 +31,8 @@ const WYNWMid = () => {
     const handleResize = () => {
       window.innerWidth > 500 ? setIsMobile(true) : setIsMobile(false);
     };
+
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {

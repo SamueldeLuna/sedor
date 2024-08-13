@@ -78,7 +78,7 @@
     }
 
     .brickTitel.hovered {
-        color: var(--red);
+        color: black;
         letter-spacing: normal;
     }
 
@@ -87,6 +87,7 @@
         height: 10vw;
         left: 11vw;
         top: 34vw;
+        transition: none;
     }
 
     .brickTitelDots.hovered {

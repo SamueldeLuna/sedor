@@ -50,3 +50,28 @@
         width: 44vw;
     }
 }
+
+@media (max-width: 500px) {
+    .WWAIntroFlex {
+        margin-top: 40vw;
+    }
+    
+    .WWAIntroBread {
+        font-size: 5vw;
+        width: 80vw;
+        position: relative;
+        left: -6vw;
+    }
+
+    .WWAIntroGorilla {
+        top: 10vw;
+        left: -40vw;
+        width: 70%
+    }
+
+    .WWAIntroTitel {
+        font-family: "KCUppercut";
+        position: relative;
+        left:-24vw;
+    }
+}
