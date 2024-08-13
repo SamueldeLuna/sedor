@@ -1,5 +1,3 @@
-
-
 .menuIcon {
     width: 40px;
     margin: 30px;
@@ -89,6 +87,7 @@
 
     .menuItem {
         width: 60vw;
+        overflow-wrap: break-word;
         font-size: 15vw;
         margin-top: 50px;
         margin-bottom: 50px;

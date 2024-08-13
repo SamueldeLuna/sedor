@@ -8,7 +8,6 @@ import { useScroll, useMotionValueEvent } from "framer-motion";
 // Assets
 import menuIcon from "../../assets/menu_icon.svg";
 import xIcon from "../../assets/x_icon.svg";
-import dots from "../../assets/dots.webp";
 
 // CSS
 import "./Menu.css";

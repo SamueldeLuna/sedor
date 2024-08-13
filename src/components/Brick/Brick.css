@@ -67,6 +67,10 @@
 
 
 @media (max-width: 500px) {
+    .brickFlex {
+        margin-top: -30vw;
+    }
+    
     .brickDoodleLink{
         z-index: 0;
     }

@@ -1,5 +1,5 @@
 // React
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // Framer Motion
 import { useScroll, useMotionValueEvent } from "framer-motion";
@@ -26,6 +26,22 @@ const Flag = () => {
     setIsHovered(!isHovered);
   };
 
+  // Width check
+  const [isMobile, setIsMobile] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      window.innerWidth > 500 ? setIsMobile(true) : setIsMobile(false);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   // Scrolltracking
   const [scrollBool, setScrollBool] = useState(true);
   const { scrollY } = useScroll();
@@ -39,7 +55,11 @@ const Flag = () => {
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const scrollPercent = handleScroll(latest);
-    scrollPercent >= 0.3 ? setScrollBool(false) : setScrollBool(true);
+    if (!isMobile) {
+      scrollPercent >= 0.4 ? setScrollBool(false) : setScrollBool(true);
+    } else {
+      scrollPercent >= 0.3 ? setScrollBool(false) : setScrollBool(true);
+    }
   });
 
   return (

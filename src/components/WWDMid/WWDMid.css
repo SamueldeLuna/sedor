@@ -3,6 +3,8 @@
     width: 100%;
     justify-content: center;
     margin-top: -20vw;
+    overflow-x: clip;
+    overflow-y: visible;
 }
 
 .WWDMidTextFlex {
@@ -61,7 +63,7 @@ strong {
     }
 
     .WWDMidDoodle {
-        top: 40vw;
+        top: 50vw;
     }
 
     .WWDMidTitel {
