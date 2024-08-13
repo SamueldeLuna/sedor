@@ -1,12 +1,10 @@
-body {
-    overflow-x: hidden;
-}
-
 .WWDFlagFlex {
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin: 8vw 5vw;
+    width: 95%;
+    margin: 8vw 0 0 5%;
+    overflow-x: clip;
+    overflow-y: visible;
 }
 
 .WWDFlagTitel {
@@ -17,7 +15,7 @@ body {
 .WWDFlagTitel.right {
     font-size: 53vw;
     position: relative;
-    left: -10vw;
+    left: -5vw;
     margin-top: 0.5vw;
 }
 
