@@ -2,7 +2,7 @@
     display: flex;
     margin-top: 25vw;
     justify-content: space-between;
-    overflow-x: hidden;
+    flex-wrap: wrap;
 }
 
 .WWAIntroGorilla{
@@ -65,9 +65,9 @@
     }
 
     .WWAIntroGorilla {
-        top: 10vw;
-        left: -40vw;
-        width: 70%
+        width: 70%;
+        top: -30vw;
+        left: 55vw;
     }
 
     .WWAIntroTitel {
