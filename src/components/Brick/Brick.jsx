@@ -102,6 +102,7 @@ const Brick = () => {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           src={computerMan}
+          alt="Man writing on computer"
           style={{ y: fastScroll }}
           className="brickDoodle"
         />

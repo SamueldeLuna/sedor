@@ -5,8 +5,10 @@ import { useState, useEffect } from "react";
 import { useScroll, useMotionValueEvent } from "framer-motion";
 
 // Assets
-import catEar from "../../assets/catear.png";
-import sedorGif from "../../assets/sedor.gif";
+import catEar from "../../assets/catear.webp";
+import sedorGif from "../../assets/sedor.webp";
+import sedorMedium from "../../assets/sedorMedium.webp";
+import sedorSmall from "../../assets/sedorSmall.webp";
 import youNeed from "../../assets/youNeed.webp";
 import aWebsite from "../../assets/aWebsite.webp";
 import tiger from "../../assets/tiger.webp";
@@ -67,6 +69,8 @@ const Flag = () => {
       <img
         className={`sedorText ${!scrollBool ? "hidden" : ""}`}
         src={sedorGif}
+        sizes="(max-width: 500px) 95vw, (max-width: 920px) 90vw, 80vw"
+        srcSet={`${sedorSmall} 900w, ${sedorMedium} 1400w, ${sedorGif} 2000w`}
         alt="SEDØR"
       />
       <img className="flagCatEar" src={catEar} alt="Cat" />

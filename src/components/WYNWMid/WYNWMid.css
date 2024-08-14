@@ -87,6 +87,8 @@
     .WYNWMidConBread {
         transform: translateY(0);
         opacity: 1;
+        font-size: 5vw;
+        width: 80vw;
     }
 
 }
