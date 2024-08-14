@@ -29,7 +29,6 @@ const router = createBrowserRouter(
       <Route path="/vilka-vi-är" element={<WWA />} />
       <Route path="/du-behöver-en-hemsida" element={<WYNW />} />
       <Route path="/kontakt" element={<Contacts />} />
-      <Route path="*" element={<Home />} />
     </Route>
   )
 );
