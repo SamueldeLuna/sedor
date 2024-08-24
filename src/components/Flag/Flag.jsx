@@ -6,11 +6,17 @@ import { useScroll, useMotionValueEvent } from "framer-motion";
 
 // Assets
 import catEar from "../../assets/catear.webp";
+
 import sedorGif from "../../assets/sedor.webp";
 import sedorMedium from "../../assets/sedorMedium.webp";
 import sedorSmall from "../../assets/sedorSmall.webp";
+
 import youNeed from "../../assets/youNeed.webp";
+import smallYouNeed from "../../assets/smallYouNeed.webp";
+
 import aWebsite from "../../assets/aWebsite.webp";
+import smallAWebsite from "../../assets/smallAWebsite.webp";
+
 import tiger from "../../assets/tiger.webp";
 
 // CSS
@@ -86,11 +92,15 @@ const Flag = () => {
             <img
               className={`flagTextImg ${isHovered ? "hovered" : ""}`}
               src={youNeed}
+              sizes="80vw"
+              srcSet={`${smallYouNeed} 900w, ${youNeed} 2000w`}
               alt="Du behöver"
             />
             <img
               className={`flagTextImg sub ${isHovered ? "hovered" : ""}`}
               src={aWebsite}
+              sizes="80vw"
+              srcSet={`${smallAWebsite} 900w, ${aWebsite} 2000w`}
               alt="en hemsida"
             />
           </Link>

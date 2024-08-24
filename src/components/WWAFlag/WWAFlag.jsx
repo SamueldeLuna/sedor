@@ -6,6 +6,8 @@ import { motion, useTransform, useScroll } from "framer-motion";
 
 // Assets
 import catEyes from "../../assets/catEyes.webp";
+import smallCatEyes from "../../assets/smallCatEyes.webp";
+
 import dots from "../../assets/dots.webp";
 
 // CSS
@@ -47,11 +49,13 @@ const WWDFlag = () => {
   );
 
   return (
-    <div
-      ref={container}
-      style={{ backgroundImage: `url(${catEyes})` }}
-      className="WWAFlagFlex"
-    >
+    <div ref={container} className="WWAFlagFlex">
+      <img
+        src={catEyes}
+        srcSet={`${smallCatEyes} 700w, ${catEyes} 1000w`}
+        className="WWACatEyes"
+        alt="Cats with nervous eyes"
+      />
       <motion.div style={{ y: mediumScroll }} className="WWAFlagTitel">
         Vilka
       </motion.div>

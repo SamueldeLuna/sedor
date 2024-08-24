@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 // Assets
 import writingMan from "../../assets/writingMan.webp";
+import smallWritingMan from "../../assets/smallWritingMan.webp";
 
 // CSS
 import "./WWDMid.css";
@@ -24,7 +25,13 @@ const WWDMid = () => {
           </Link>
         </div>
       </div>
-      <img className="WWDMidDoodle" src={writingMan} alt="A writing man" />
+      <img
+        className="WWDMidDoodle"
+        src={writingMan}
+        sizes="130vw"
+        srcSet={`${smallWritingMan} 441w, ${writingMan} 3000w`}
+        alt="A writing man"
+      />
     </div>
   );
 };

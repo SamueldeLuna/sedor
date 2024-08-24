@@ -6,6 +6,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 // Assets
 import gorilla from "../../assets/gorilla.webp";
+import smallGorilla from "../../assets/smallGorilla.webp";
 
 // CSS
 import "./WWAIntro.css";
@@ -69,6 +70,8 @@ const WWAIntro = () => {
       <motion.img
         style={{ y: slowScroll }}
         src={gorilla}
+        sizes="(max-width: 950px) 60vw, (max-width: 500px) 70vw, 50vw"
+        srcSet={`${smallGorilla} 300w, ${gorilla}, 1000w`}
         alt="gorilla"
         className="WWAIntroGorilla"
       />
