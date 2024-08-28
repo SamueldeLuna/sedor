@@ -1,11 +1,20 @@
 @font-face {
-    font-family: "Social";
-    src: url("../assets/fonts/Social.otf") format("opentype");
+    font-family: "KCUppercut";
+    src: url("../assets/fonts/KCUppercut.otf") format("opentype");
 }
 
 @font-face {
-    font-family: "KCUppercut";
-    src: url("../assets/fonts/KCUppercut.otf") format("opentype");
+    font-family: 'Gupter';
+    font-style: normal;
+    font-weight: 500;
+    src: url("../assets/fonts/Gupter\ Medium.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Gupter';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../assets/fonts/Gupter\ Bold.woff2") format('woff2');
 }
 
 :root {

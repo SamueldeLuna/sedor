@@ -64,7 +64,7 @@ const Flag = () => {
   useMotionValueEvent(scrollY, "change", (latest) => {
     const scrollPercent = handleScroll(latest);
     if (!isMobile) {
-      scrollPercent >= 0.4 ? setScrollBool(false) : setScrollBool(true);
+      scrollPercent >= 0.5 ? setScrollBool(false) : setScrollBool(true);
     } else {
       scrollPercent >= 0.3 ? setScrollBool(false) : setScrollBool(true);
     }
