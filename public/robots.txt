@@ -1,1 +1,3 @@
-Sitemap: https://sedorstudio.com/
+User-agent: *
+Disallow: /admin/
+Allow: /
