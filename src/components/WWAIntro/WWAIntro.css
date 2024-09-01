@@ -57,9 +57,13 @@
 
 @media (max-width: 500px) {
     .WWAIntroFlex {
-        margin-top: 40vw;
+        margin-top: 90vw;
     }
     
+    .WWAIntroTextFlex{
+        top: -30vw;
+    }
+
     .WWAIntroBread {
         font-size: 5vw;
         width: 80vw;
@@ -68,9 +72,7 @@
     }
 
     .WWAIntroGorilla {
-        width: 70%;
-        top: -30vw;
-        left: 55vw;
+        display: none;
     }
 
     .WWAIntroTitel {

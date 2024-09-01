@@ -70,8 +70,6 @@ const WWAIntro = () => {
       <motion.img
         style={{ y: slowScroll }}
         src={gorilla}
-        sizes="(max-width: 950px) 60vw, (max-width: 500px) 70vw, 50vw"
-        srcSet={`${smallGorilla} 300w, ${gorilla}, 1000w`}
         alt="gorilla"
         className="WWAIntroGorilla"
       />

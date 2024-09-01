@@ -11,18 +11,12 @@ const ContactFlag = () => {
       <div className="contactFlagTitel">KONTAKTA oSs</div>
       <div className="contactConFlex">
         <div className="contactItemFlex">
-          <img src={mailIcon} alt="mailbox icon" className="contactMailIcon" />
           <div className="contactConTitel">sedorstudio@gmail.com</div>
         </div>
         <a
           href="https://www.instagram.com/sedorstudio/"
           className="contactItemFlex"
         >
-          <img
-            src={instaIcon}
-            alt="instagram icon"
-            className="contactMailIcon"
-          />
           <div className="contactConTitel">@sedorstudio</div>
         </a>
       </div>

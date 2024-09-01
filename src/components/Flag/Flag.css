@@ -38,7 +38,7 @@
 .flagTiger {
     width: 25vw;
     position: relative;
-    left: 10vw;
+    left: 9vw;
     top: -2vw;
     transform: rotateZ(-20deg);
 }
