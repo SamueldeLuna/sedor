@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useScroll, useMotionValueEvent } from "framer-motion";
 
 // Assets
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.webp";
 
 // Components
 import Menu from "../Menu/Menu";
